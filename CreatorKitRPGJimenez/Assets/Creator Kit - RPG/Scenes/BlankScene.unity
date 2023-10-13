@@ -77747,8 +77747,6 @@ GameObject:
   - component: {fileID: 473081378}
   - component: {fileID: 473081380}
   - component: {fileID: 473081379}
-  - component: {fileID: 473081381}
-  - component: {fileID: 473081382}
   m_Layer: 0
   m_Name: Quest
   m_TagString: Untagged
@@ -77784,17 +77782,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   title: Apple Quest
-  desc: 
+  desc: Fetch an apple for the archer
   questInProgressConversation: {fileID: 473081380}
   questCompletedConversation: {fileID: 473081379}
   spawnMode: 0
   enableOnQuestStart:
-  - {fileID: 0}
+  - {fileID: 1774209860}
   spawnOnQuestStart: []
   requiredItems: []
   spawnOnQuestComplete: []
   rewardItems:
-  - {fileID: 0}
+  - {fileID: 1813173801}
   destroySpawnsOnQuestComplete: 0
   introCutscenePrefab: {fileID: 0}
   outroCutscenePrefab: {fileID: 0}
@@ -77838,64 +77836,6 @@ MonoBehaviour:
     audio: {fileID: 0}
     quest: {fileID: 0}
     options: []
---- !u!114 &473081381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473081376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 450b86d94d0b945a48b3ba1ce41dcc52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: 
-  desc: 
-  questInProgressConversation: {fileID: 0}
-  questCompletedConversation: {fileID: 0}
-  spawnMode: 0
-  enableOnQuestStart:
-  - {fileID: 446472319}
-  spawnOnQuestStart: []
-  requiredItems:
-  - item: {fileID: 446472324}
-    count: 1
-  spawnOnQuestComplete: []
-  rewardItems: []
-  destroySpawnsOnQuestComplete: 1
-  introCutscenePrefab: {fileID: 0}
-  outroCutscenePrefab: {fileID: 0}
-  isStarted: 0
-  isFinished: 0
---- !u!114 &473081382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473081376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 450b86d94d0b945a48b3ba1ce41dcc52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: 
-  desc: 
-  questInProgressConversation: {fileID: 0}
-  questCompletedConversation: {fileID: 0}
-  spawnMode: 0
-  enableOnQuestStart: []
-  spawnOnQuestStart: []
-  requiredItems: []
-  spawnOnQuestComplete: []
-  rewardItems:
-  - {fileID: 1813173801}
-  destroySpawnsOnQuestComplete: 1
-  introCutscenePrefab: {fileID: 0}
-  outroCutscenePrefab: {fileID: 0}
-  isStarted: 0
-  isFinished: 0
 --- !u!1 &483012795
 GameObject:
   m_ObjectHideFlags: 0
@@ -78188,7 +78128,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 353955888, guid: 74b5c6b26f0fc4028b9aac1a7a36767d, type: 3}
       propertyPath: items.Array.data[2].text
-      value: Thank you for the tasty apple
+      value: Indeed it is.
       objectReference: {fileID: 0}
     - target: {fileID: 353955888, guid: 74b5c6b26f0fc4028b9aac1a7a36767d, type: 3}
       propertyPath: items.Array.data[1].quest
@@ -79326,6 +79266,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 801336791}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &816430747 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8835582639856596522, guid: 74b5c6b26f0fc4028b9aac1a7a36767d,
+    type: 3}
+  m_PrefabInstance: {fileID: 905198187}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &834117927
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79654,6 +79600,74 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 446472321}
   m_SourcePrefab: {fileID: 100100000, guid: 2a657642475934620a07fd2e829b35d7, type: 3}
+--- !u!1001 &905198187
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 963087236}
+    m_Modifications:
+    - target: {fileID: 8835582639856596522, guid: 74b5c6b26f0fc4028b9aac1a7a36767d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835582639856596522, guid: 74b5c6b26f0fc4028b9aac1a7a36767d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835582639856596522, guid: 74b5c6b26f0fc4028b9aac1a7a36767d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835582639856596522, guid: 74b5c6b26f0fc4028b9aac1a7a36767d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835582639856596522, guid: 74b5c6b26f0fc4028b9aac1a7a36767d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835582639856596522, guid: 74b5c6b26f0fc4028b9aac1a7a36767d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835582639856596522, guid: 74b5c6b26f0fc4028b9aac1a7a36767d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835582639856596522, guid: 74b5c6b26f0fc4028b9aac1a7a36767d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835582639856596522, guid: 74b5c6b26f0fc4028b9aac1a7a36767d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835582639856596522, guid: 74b5c6b26f0fc4028b9aac1a7a36767d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835582639856596533, guid: 74b5c6b26f0fc4028b9aac1a7a36767d,
+        type: 3}
+      propertyPath: m_Name
+      value: NPC
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 74b5c6b26f0fc4028b9aac1a7a36767d, type: 3}
 --- !u!1001 &913507728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79761,6 +79775,7 @@ Transform:
   - {fileID: 621694220}
   - {fileID: 297629110}
   - {fileID: 1887090888}
+  - {fileID: 816430747}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &968262384
@@ -81806,6 +81821,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1328789137759902224, guid: ba139b8176ffc426bb00fbe377dd704a,
     type: 3}
   m_PrefabInstance: {fileID: 1764565147}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1774209860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5440847397157196389, guid: 2a657642475934620a07fd2e829b35d7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1658431681}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1781258411 stripped
 Transform:
